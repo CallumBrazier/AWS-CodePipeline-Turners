@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +9,49 @@
 body {
   background-image: url("./images/homepage-background.jpeg");
   background-size: cover;
+}
+
+.header {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+}
+
+.header-right {
+  align-items: baseline;
+}
+
+.phone {
+  color: #0976bd;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+
+.taxi {
+  color: #cc1444;
+  font-size: 35px;
+}
+
+.login-buttons {
+  width: 99px;
+  height: 47px;
+  top: 24px;
+  border-radius: 4px;
+  padding: 16px 24px;
+  border: none;
+  background-color: #0976bd;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 12px;
+}
+
+.burger-bars {
+  color: #0976bd;
+  width: 49px;
 }
