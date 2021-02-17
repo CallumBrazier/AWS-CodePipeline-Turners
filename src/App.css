@@ -7,12 +7,14 @@
 }
 
 body {
-  background-image: url("./images/homepage-background.jpeg");
+  background: url("./images/homepage-background.jpeg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
 .header {
-  border: 1px solid green;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -21,10 +23,14 @@ body {
 .header-left,
 .header-right {
   display: flex;
+  width: 50%;
 }
 
 .header-right {
-  align-items: baseline;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .phone {
@@ -33,9 +39,15 @@ body {
   font-size: 24px;
 }
 
-.taxi {
+.taxi-icon {
   color: #cc1444;
   font-size: 35px;
+  margin: 2% 5% 0 0;
+}
+
+.user-icon {
+  margin: 0 0 0 10%;
+  font-size: 18px;
 }
 
 .login-buttons {
@@ -49,9 +61,91 @@ body {
   font-family: "Roboto", sans-serif;
   color: white;
   font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 2% 5% 0 0;
+}
+
+.login-buttons:focus,
+.search:focus {
+  outline: none;
+}
+
+.login-buttons:hover,
+.taxi-icon:hover,
+.burger-bars:hover,
+.footer-left:hover,
+.footer-right:hover,
+.footer-mid:hover {
+  cursor: pointer;
 }
 
 .burger-bars {
   color: #0976bd;
-  width: 49px;
+  font-size: 3rem;
+  margin: 2% 5% 0 0;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search {
+  background: linear-gradient(180deg, #d88383 0%, rgba(102, 29, 29, 0) 100%),
+    #cc1444;
+  mix-blend-mode: luminosity;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  width: 349px;
+  height: 52px;
+  color: white;
+  margin: 8% 0 0 0;
+  font-family: FontAwesome, "Roboto", sans-serif;
+}
+.search::placeholder {
+  color: white;
+  font-size: 24px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  text-shadow: black 2px 2px;
+  position: fixed;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+}
+
+.footer-left {
+  width: 33%;
+  text-align: left;
+  margin: 0 0 0 5%;
+}
+
+.footer-mid {
+  width: 33%;
+  text-align: center;
+}
+
+.footer-right {
+  width: 33%;
+  text-align: right;
+  margin: 0 5% 0 0;
 }

@@ -1,4 +1,5 @@
 import "./App.css";
+import "../node_modules/font-awesome/css/font-awesome.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPhoneAlt,
@@ -22,16 +23,28 @@ function App() {
               <FontAwesomeIcon icon={faPhoneAlt} /> 0800 887 637
             </p>
           </div>
-          <div className="header-left">
-            <FontAwesomeIcon icon={faTaxi} className="taxi" />
+          <div className="header-right">
+            <FontAwesomeIcon icon={faTaxi} className="taxi-icon" />
             <button className="login-buttons">
-              Login <FontAwesomeIcon icon={faPortrait} />
+              Login <FontAwesomeIcon icon={faPortrait} className="user-icon" />
             </button>
             <button className="login-buttons">Join us</button>
 
             <FontAwesomeIcon icon={faBars} className="burger-bars" />
           </div>
         </header>
+        <div className="searchbar">
+          <input
+            type="search"
+            className="search"
+            placeholder="&#xF002; Find a Car..."
+          />
+        </div>
+        <footer className="footer">
+          <h3 className="footer-left">Book an Appraisal</h3>
+          <h3 className="footer-mid">About us</h3>
+          <h3 className="footer-right">Help</h3>
+        </footer>
       </body>
     </div>
   );
