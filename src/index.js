@@ -3,10 +3,19 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import Finance from "./pages/finance";
+import Insurance from "./pages/insurance";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Switch>
+        <Route path="/" exact component={App} />
+        <Route path="/insurance" component={Insurance} />
+        <Route path="/finance" component={Finance} />
+      </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 );

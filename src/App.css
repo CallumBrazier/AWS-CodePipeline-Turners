@@ -111,6 +111,7 @@ body {
   color: white;
   margin: 8% 0 0 0;
   font-family: FontAwesome, "Roboto", sans-serif;
+  font-size: 24px;
 }
 .search::placeholder {
   color: white;
