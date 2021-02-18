@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.virtual-assistant-body {
+  background: url("../images/virtual-assistant-background.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+}
+
+.header-virtual-assistant {
+  background-color: rgba(156, 190, 223, 1);
+}
+
+.va-body-left {
+  width: 50%;
+  display: flex;
+  text-align: center;
+}
+.va-body-left-text {
+  color: white;
+  font-family: "Comfortaa", cursive;
+  font-size: 36px;
+  margin: 100px 0 0 60px;
+}
+
+.va-body-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.va-grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 60px;
+  grid-row-gap: 60px;
+  margin: -100px 0 0 80px;
+}
+
+.va-grid-button {
+  background: #cc1444;
+  border-radius: 4px;
+  width: 99px;
+  height: 58px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  color: white;
+}
+
+.va-grid-button:hover {
+  cursor: pointer;
+}
+
+.va-grid-button:focus {
+  outline: none;
+}

@@ -27,7 +27,11 @@ export default function Burger() {
         <ul className="nav-menu-items">
           <Link to="#" className="menu-bars">
             <li className="navbar-toggle">
-              <FontAwesomeIcon icon={faHome} onClick={showSidebar} />
+              <FontAwesomeIcon
+                icon={faHome}
+                onClick={showSidebar}
+                className="home-icon"
+              />
             </li>
             {SidebarData.map((item, index) => {
               return (

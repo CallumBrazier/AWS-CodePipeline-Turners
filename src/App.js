@@ -1,5 +1,3 @@
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-
 import Burger from "./components/burger";
 
 import "./App.css";
@@ -11,7 +9,7 @@ import {
   faPortrait,
 } from "@fortawesome/free-solid-svg-icons";
 
-import logo2 from "./images/logo-transparent.png";
+import logo from "./images/turners-logo.png";
 
 function App() {
   return (
@@ -20,7 +18,7 @@ function App() {
         <body>
           <header className="header">
             <div className="header-left">
-              <img src={logo2} alt="turners-logo" className="logo" />
+              <img src={logo} alt="turners-logo" className="logo" />
               <p className="phone">
                 <FontAwesomeIcon icon={faPhoneAlt} transform={{ rotate: 42 }} />
                 0800 887 637

@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.insurance-body {
+  background: linear-gradient(
+      to bottom,
+      rgba(137, 182, 226, 1) 0%,
+      rgba(229, 67, 174, 0.35) 25%,
+      rgba(225, 225, 225, 0) 50%
+    ),
+    url("../images/insurance-background.jpeg");
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100vh;
+  width: 100vw;
+}
+
+.insurance-top-info {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: space-between;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.insurance-top-info-left,
+.insurance-top-info-right {
+  width: 25%;
+  font-size: 24px;
+}
+.insurance-top-info-mid {
+  width: 50%;
+}
+
+.insurance-top-info-mid-title {
+  font-size: 36px;
+  margin: 10px 0 0 0;
+  font-weight: bold;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 300px;
+  grid-row-gap: 30px;
+  justify-content: center;
+}
+
+.grid-item {
+  position: relative;
+  text-align: center;
+}
+
+.grid-item::before {
+  content: "";
+  position: absolute;
+  margin: 0 0 0 -140px;
+  width: 280px;
+  height: 220px;
+  font-size: 30px;
+  text-align: center;
+  mix-blend-mode: multiply;
+  background-color: rgba(196, 196, 196, 1);
+}
+
+.grid-item-title {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 20px 0 10px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.grid-item-button {
+  background-color: rgba(9, 118, 189, 1);
+  border: none;
+  border-radius: 4px;
+  margin: 0 0 10px 0;
+  width: 120px;
+  height: 44px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.grid-item-button:hover {
+  cursor: pointer;
+}
+
+.grid-item-button:focus {
+  outline: none;
+}
